@@ -24,15 +24,17 @@ struct TicketView: View {
     
     private var mainTitleGroup: some View {
         VStack {
-            Text("마이펫의 이중생활2")
-                .font(.PretendardBold30)
-                .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
-            Text("본인 + 동반 1인")
-                .font(.PretendardLight16)
-            Text("30,100원")
-                .font(.PretendardBold24)
+            Group {
+                Text("마이펫의 이중생활2")
+                    .font(.PretendardBold30)
+                    .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
+                Text("본인 + 동반 1인")
+                    .font(.PretendardLight16)
+                Text("30,100원")
+                    .font(.PretendardBold24)
+            }
+            .foregroundStyle(Color.white)
         }
-        .foregroundStyle(Color.white)
         .frame(height: 24)
 //        .frame(height: 84) // 예시 코드에는 이렇게가 맞는데 아마 내 토끼 이미지 크기가 예시랑 달라서 그런듯?
     }
